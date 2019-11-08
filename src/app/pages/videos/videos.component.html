@@ -1,0 +1,16 @@
+<div>
+    <section class="topLogo">
+      <img src="../../../assets/img/LogoMobile.png" alt="Logo IMA">
+    </section>
+    <section class="titleImage">
+      <img src="../../../assets/img/videos.png" alt="acerca de nosotros">
+    </section>
+    <section class="titleCard">
+      <h2 class="rightTitle">Videos</h2>
+    </section>
+    <section class="leftBorderCard" *ngFor="let video of videos">
+      <h2 class="videoTitle">{{video.title}}</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xyPeZH2CS9k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+  </div>
+  

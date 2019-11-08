@@ -1,0 +1,15 @@
+<div>
+  <section class="topLogo">
+    <img src="../../../assets/img/LogoMobile.png" alt="Logo IMA">
+  </section>
+  <section class="titleImage">
+    <img src="../../../assets/img/publications.png" alt="acerca de nosotros">
+  </section>
+  <section class="titleCard">
+    <h2 class="rightTitle">Publicaciones</h2>
+  </section>
+  <section class="rightBorderCard" *ngFor="let publication of cards">
+    <h2 class="leftTitle">Titulo</h2>
+    <p>{{publication}}</p>
+  </section>
+</div>

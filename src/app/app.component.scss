@@ -1,0 +1,273 @@
+// Variables
+$primary-gray:#E4E4E4;
+$secondary-gray:#707070;
+$primary-blue:#071739;
+$secondary-blue:#32405B;
+$third-blue:#8ED2DF;
+$left-side-background:#F0F0F0;
+$right-side-background:#E4E4E4;
+$footer-color:#082D3A;
+$footer-icon-blue: #006660;
+$size: 12px;
+
+a,
+i {
+  cursor: pointer;
+}
+
+li {
+  margin: 0;
+}
+
+// Open Navbar
+.mainContainer {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to right, $left-side-background 0%, $left-side-background 50%, $left-side-background 50%, $right-side-background 50%, $right-side-background 100%);
+}
+
+.navbarContainer {
+  width: 85%;
+  position: fixed;
+}
+
+.mainMenu {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.areasSection {
+  width: 75%;
+  height: 100vh;
+  background-color: $primary-gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.logoNavbar,
+.closeNavbar {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0 3em 0;
+}
+
+.listaAreas>ul li {
+  width: 100%;
+  height: 40px;
+  border-bottom: solid 1px #fff;
+  display: flex;
+  align-items: center;
+}
+
+.listaAreas>ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+}
+
+.iconSection {
+  width: 25%;
+  height: 100vh;
+  background-color: $primary-blue;
+}
+
+.close {
+  margin: 1em 0;
+}
+
+.areasIcons {
+  width: 80%;
+  background-color: $secondary-blue;
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+  border-top-right-radius: 20px;
+}
+
+.areasIcons>ul {
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.areasIcons>ul li {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.areasIcons>ul li a i {
+  text-decoration: none;
+  list-style: none;
+  color: $secondary-gray;
+  font-size: 1.5em;
+}
+
+.socialIcons {
+  width: 80%;
+  background-color: $third-blue;
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons>ul {
+  padding-left: 0;
+  margin: 3px;
+}
+
+.socialIcons>ul li {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.socialIcons>ul li a i {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  font-size: 1.5em;
+  margin: 1px;
+}
+
+.search-bar {
+  height: auto;
+  width: auto;
+  position: absolute;
+  display: inline-block;
+  top: 68%;
+  left: 15%;
+  transform: translate(-10%, -50%);
+  box-sizing: border-box;
+
+  input {
+    height: 22px;
+    width: 22px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 9px;
+    border: $size/10 solid transparent;
+    border-radius: 44px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.5s ease-out;
+
+    color: transparent;
+
+    &::placeholder {
+      color: transparent;
+    }
+
+    &:invalid {
+      box-shadow: none;
+    }
+
+    &:hover {
+      border: $size/10 solid #FFF;
+      box-shadow: 0 0 $size/10 $size/10 #EEE;
+    }
+
+    &:focus,
+    &:valid {
+      width: 200px;
+      border: $size/10 solid #267491;
+      outline: none;
+      cursor: auto;
+      background-color: #FFF;
+      color: #000;
+
+      &::placeholder {
+        color: #999;
+      }
+
+      +.search-icon {
+        z-index: 0;
+        border-color: #267491;
+        right: 20px;
+
+        &:after {
+          background-color: #267491;
+        }
+      }
+    }
+  }
+}
+
+
+
+.search-icon {
+  display: inline-block;
+  height: $size;
+  width: $size;
+  border-radius: 50%;
+  border: $size/10 solid #267491;
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  z-index: -1;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: $size/2 + $size/4*1.414 + $size/10;
+    left: $size/2 + $size/4*1.414;
+    transform: rotate(45deg);
+    height: $size/10;
+    width: $size/2;
+    background-color: #267491;
+    border-radius: 10px;
+  }
+}
+
+// Collapsed Navbar
+
+nav {
+  width: 13em;
+  background-color: $primary-blue;
+  z-index: 9;
+}
+
+.open {
+  padding-top: 50px;
+  margin-left: -1px;
+  position: fixed;
+}
+
+// Main Content
+
+.mainContentContainer {
+  display: flex;
+}
+
+// Footer 
+
+footer {
+  height: 150px;
+  background-color: $footer-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+footer>p {
+  color: $secondary-gray;
+  border-bottom: solid 1px $secondary-gray;
+  text-align: center;
+  margin: 0 4em;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+footer>div {
+  display: flex;
+  justify-content: center;
+}
+
+footer>div a i {
+  color: $footer-icon-blue;
+  margin: 15px;
+  font-size: 2em;
+  margin-top: 0;
+}

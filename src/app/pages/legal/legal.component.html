@@ -1,0 +1,33 @@
+<div>
+  <section class="topLogo">
+    <img src="../../../assets/img/LogoMobile.png" alt="Logo IMA">
+  </section>
+  <section class="titleImage">
+    <img src="../../../assets/img/legal.png" alt="acerca de nosotros">
+  </section>
+  <section class="titleCard">
+    <h2 class="rightTitle">Marco Legal</h2>
+    <h2 class="leftTitle">Legislación Mexicana</h2>
+    <ul>
+      <li *ngFor="let file of legislacion">
+        <a href="">{{file}}</a>
+      </li>
+    </ul>
+  </section>
+  <section class="leftBorderCard">
+    <h2 class="leftTitle">Convenios Internacionales</h2>
+    <ul>
+      <li *ngFor="let file of convenios">
+        <a href="">{{file}}</a>
+      </li>
+    </ul>
+  </section>
+  <section class="leftBorderCard">
+    <h2 class="leftTitle">Jurisprudencia</h2>
+   <ul>
+     <li *ngFor="let file of jurisprudencia">
+       <a href="">{{file}}</a>
+     </li>
+   </ul>
+  </section>
+</div>

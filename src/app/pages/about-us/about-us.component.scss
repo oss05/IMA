@@ -1,0 +1,22 @@
+$primary-blue-text: #065674;
+
+.imgLogoHome{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.imgLogoHome > img{
+    width: 280px;
+}
+ 
+.parrafosHome {
+    padding: 0 2em;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.parrafosHome > p {
+    color: $primary-blue-text;
+}

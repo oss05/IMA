@@ -1,1 +1,96 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:700|Rubik&display=swap');
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+h2 , h3 {
+  font-size: 16px;
+  padding: 3px 0;
+  margin: 0;
+  font-weight: bold;
+  font-family: 'PT Serif', serif;
+}
+
+p, li, a{
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    color: #065674;
+}
+
+li {
+  margin-bottom: 15px;
+  list-style-type: circle;
+}
+
+//Logo from start
+
+.active-link {
+  margin-left: 20px;
+  color: #04D3C5 !important;
+}
+
+.active-icon {
+	color: #fff !important;
+}
+
+
+.topLogo {
+  width: 200px;
+  padding-left: 50px;
+  margin: 1em 0 -1em 0;
+}
+
+.titleImage {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -3px;
+}
+
+.rightTitle {
+  text-align: right;
+  border-bottom: solid 1px #E4E4E4;
+  margin-bottom: 20px;
+}
+
+.leftTitle {
+  text-align: left;
+  border-bottom: solid 1px #E4E4E4;
+  margin-bottom: 20px;
+}
+
+.titleCard {
+  background-color: #fff;
+  padding: 10px 30px 5px 30px;
+  box-shadow:0 2px 10px 0px #aaaaaa;
+}
+
+.rightBorderCard {
+  background-color: #fff;
+  padding: 10px 30px 5px 30px;
+  box-shadow:0 2px 10px 0px #aaaaaa;
+  margin: 1em 0;
+  border-top-right-radius: 40px;
+}
+
+.leftBorderCard {
+  background-color: #fff;
+  padding: 10px 30px 5px 30px;
+  box-shadow:0 2px 10px 0px #aaaaaa;
+  margin: 1em 0;
+  border-top-left-radius: 40px;
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    background-color: lightblue;
+  }
+}

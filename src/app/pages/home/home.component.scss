@@ -1,0 +1,34 @@
+$primary-blue-text: #065674;
+$primary-gray:#F0F0F0;
+$secondary-gray:#E4E4E4;
+
+section {
+  height: 90vh;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.imgLogoHome {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.imgLogoHome>img {
+  width: 200px;
+}
+
+.parrafosHome {
+  padding: 0 2em;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+.parrafosHome>p {
+  color: $primary-blue-text;
+}
