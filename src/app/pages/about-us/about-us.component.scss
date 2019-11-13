@@ -20,3 +20,72 @@ $primary-blue-text: #065674;
 .parrafosHome > p {
     color: $primary-blue-text;
 }
+
+//Deskop
+
+// .desSecction{
+// //   border: solid 1px;
+// }
+
+.desLogo{
+    width: 250px;
+    height: 107.34px;
+    margin-left: 80px;  
+}
+.desIcon{
+    width: 100px;
+    position:fixed;
+    right: 0;
+    
+}
+.desInfo{
+    // border:springgreen 1px solid ;
+    width: 93vw;
+    height: 80vh;
+    padding-left: 70px;
+    padding-top: 50px;
+
+}
+.blanco{
+    margin-bottom: 50px;
+    height: auto;
+    border: solid 4px white;
+}
+.desWho{
+    // border:rgb(167, 18, 117) 1px solid ;
+    width: 40%;
+    margin-right: 40px ;
+}
+.desWho>h2{
+    font-size: 30px;
+}
+.desWho>p{
+    font-size: 15px;
+}
+.desFilo{
+    // border:rgb(48, 18, 95) 1px solid ;
+    width: 50%;
+    padding-left: 50px;
+}
+.desFilo>h2{
+    font-size: 30px;
+}
+.desFilo>ul li{
+    font-size: 15px;
+}
+.desFilo>p{
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 1000px) {
+    
+.desInfo{
+    // border:springgreen 1px solid ;
+    width: 93vw;
+    height: auto;
+    padding-left: 70px;
+    padding-top: 50px;
+
+}
+  }
+  

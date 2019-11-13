@@ -1,11 +1,46 @@
 <div>
-  <section class="topLogo">
+  <section class="topLogo d-block d-lg-none">
     <img src="../../../assets/img/LogoMobile.png" alt="Logo IMA">
   </section>
-  <section class="titleImage">
+  <section class="desSecction d-none d-lg-block">
+      <div class="d-flex justify-content-between">
+        <img class="desLogo" src="../../../assets/img/LogoDesktop.png" alt="Logo IMA">
+        <img class="desIconFix" src="../../../assets//img/contactoDes.png" alt="">
+      </div>
+    </section>
+  <section class="titleImage d-flex justify-content-end d-lg-none">
     <img src="../../../assets/img/videos.png" alt="acerca de nosotros">
   </section>
-  <section class="titleCard">
+  <section class="titleCard d-block d-lg-none">
+    <h2 class="rightTitle">Contactanos</h2>
+    <div class="container d-block d-lg-none">  
+      <form id="contact" action="" method="post">
+        <h3>Quick Contact</h3>
+        <h4>Contact us today, and get reply with in 24 hours!</h4>
+        <fieldset>
+          <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Email Address" type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+      </form>  
+    </div>
+  </section>
+
+
+  <section class="desForm d-none d-lg-block">
     <h2 class="rightTitle">Contactanos</h2>
     <div class="container">  
       <form id="contact" action="" method="post">

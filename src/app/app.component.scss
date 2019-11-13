@@ -271,3 +271,121 @@ footer>div a i {
   font-size: 2em;
   margin-top: 0;
 }
+
+//Deskop Version
+.desNav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  // border: solid 1px;
+  height: 25px;
+}
+
+.desIcon {
+  font-size: 25px;
+  margin: 10px;
+  color: #1c6660;
+  margin-top: 0;
+}
+
+.desContact {
+
+  background-color: #304e59;
+  margin-right: 180px;
+  margin-bottom: 10px;
+  height: 25px;
+  font-size: 15px;
+  padding: 0;
+  width: 100px;
+  border-radius: 20px;
+}
+
+.desSearch {
+  width: 200px;
+  height: 25px;
+  margin-top: 0x;
+  border-radius: 20px;
+}
+
+.desInput{
+  height: 30px;
+  margin-top: 50px;
+}
+.desInput>p{
+  color: white;
+  margin: 0;
+}
+.desInput>input{
+  margin: 0;
+}
+
+.desIconFooter{
+  margin-top: 50px;
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .navbarContainer {
+    width: 300px;
+  }
+
+  .mainContainer {
+    width: 100%;
+    height: auto;
+    background: $right-side-background;
+  }
+
+  footer {
+    height: 200px;
+    background-color: $footer-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  footer>p {
+    color: $secondary-gray;
+    border-bottom: solid 1px $secondary-gray;
+    text-align: center;
+    margin: 0 4em;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+  }
+
+  footer>div {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer>div a i {
+    color: white;
+    margin: 15px;
+    font-size: 3em;
+    margin-top: 0;
+  }
+
+  // .desPart {
+  //   border: solid 1px gold;
+
+  // }
+
+  // .part1{
+  //   border: solid 1px green;
+  // }
+
+  // .part2{
+  //   border: solid 1px red;
+    
+  // }
+  .part1>p {
+    margin-top: 5px;
+    color: #FFF;
+    font-size: 13px;
+  }
+
+  .part2>p {
+    margin-top: 5px;
+    color: #FFF;
+    font-size: 13px;
+  }
+}

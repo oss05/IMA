@@ -12,7 +12,8 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-h2 , h3 {
+h2,
+h3 {
   font-size: 16px;
   padding: 3px 0;
   margin: 0;
@@ -20,10 +21,12 @@ h2 , h3 {
   font-family: 'PT Serif', serif;
 }
 
-p, li, a{
-    font-family: 'Rubik', sans-serif;
-    font-size: 12px;
-    color: #065674;
+p,
+li,
+a {
+  font-family: 'Rubik', sans-serif;
+  font-size: 12px;
+  color: #065674;
 }
 
 li {
@@ -39,7 +42,7 @@ li {
 }
 
 .active-icon {
-	color: #fff !important;
+  color: #fff !important;
 }
 
 
@@ -70,13 +73,13 @@ li {
 .titleCard {
   background-color: #fff;
   padding: 10px 30px 5px 30px;
-  box-shadow:0 2px 10px 0px #aaaaaa;
+  box-shadow: 0 2px 10px 0px #aaaaaa;
 }
 
 .rightBorderCard {
   background-color: #fff;
   padding: 10px 30px 5px 30px;
-  box-shadow:0 2px 10px 0px #aaaaaa;
+  box-shadow: 0 2px 10px 0px #aaaaaa;
   margin: 1em 0;
   border-top-right-radius: 40px;
 }
@@ -84,13 +87,19 @@ li {
 .leftBorderCard {
   background-color: #fff;
   padding: 10px 30px 5px 30px;
-  box-shadow:0 2px 10px 0px #aaaaaa;
+  box-shadow: 0 2px 10px 0px #aaaaaa;
   margin: 1em 0;
   border-top-left-radius: 40px;
 }
 
-@media only screen and (min-width: 1000px) {
-  body {
-    background-color: lightblue;
-  }
+.desLogo{
+  width: 250px;
+  height: 107.34px;
+  margin-left: 80px;  
+}
+.desIconFix{
+  width: 100px;
+  position:fixed;
+  right: 0;
+  
 }

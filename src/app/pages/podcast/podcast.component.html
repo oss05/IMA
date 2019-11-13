@@ -1,14 +1,28 @@
 <div>
-  <section class="topLogo">
+  <section class="topLogo d-block d-lg-none">
     <img src="../../../assets/img/LogoMobile.png" alt="Logo IMA">
   </section>
-  <section class="titleImage">
+  <section class="desSecction d-none d-lg-block">
+      <div class="d-flex justify-content-between">
+        <img class="desLogo" src="../../../assets/img/LogoDesktop.png" alt="Logo IMA">
+        <img class="desIconFix" src="../../../assets//img/postDes.png" alt="">
+      </div>
+    </section>
+  <section class="titleImage d-flex justify-content-end d-lg-none">
     <img src="../../../assets/img/podcast.png" alt="acerca de nosotros">
   </section>
-  <section class="titleCard">
+  <section class="titleCard d-block d-lg-none">
     <h2 class="rightTitle">Videos</h2>
   </section>
-  <section class="leftBorderCard" *ngFor="let video of videos">
+  <section class="leftBorderCard d-block d-lg-none" *ngFor="let video of videos">
+    <h2 class="videoTitle">{{video.title}}</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xyPeZH2CS9k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+  <section class="desPost d-none d-lg-block">
+    <h2 class="rightTitle">Videos</h2>
+  </section>
+  <section class=" desPost d-none d-lg-block" *ngFor="let video of videos">
     <h2 class="videoTitle">{{video.title}}</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/xyPeZH2CS9k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </section>

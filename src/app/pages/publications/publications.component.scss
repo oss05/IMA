@@ -1,0 +1,30 @@
+//Deskop
+.desLogo>img{
+    width: 250px;
+    margin-left: 80px;
+}
+.desTitle{
+    // border: solid 2px;
+    width: 1000px;
+
+}
+.desPubli{
+    // border: solid 1px;
+    width: 65%;
+    margin-left: 170px;
+
+}
+.desPubli>h2{
+    font-size: 25px;
+}
+.desPubli>p{
+    font-size: 15px;
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .rightTitle{
+        font-size: 30px;
+    }
+  }
+  

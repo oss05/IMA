@@ -1,15 +1,33 @@
 <div>
-  <section class="topLogo">
-    <img src="../../../assets/img/LogoMobile.png" alt="Logo IMA">
-  </section>
-  <section class="titleImage">
+    <section class="topLogo d-block d-lg-none">
+        <img src="../../../assets/img/LogoMobile.png" alt="Logo IMA">
+      </section>
+      <section class="desSecction d-none d-lg-block">
+          <div class="d-flex justify-content-between">
+            <img class="desLogo" src="../../../assets/img/LogoDesktop.png" alt="Logo IMA">
+            <img class="desIconFix" src="../../../assets//img/publicacionesDes.png" alt="">
+          </div>
+        </section>
+  <section class="titleImage d-flex justify-content-end d-lg-none">
     <img src="../../../assets/img/publications.png" alt="acerca de nosotros">
   </section>
-  <section class="titleCard">
+  <section class="titleCard d-block d-lg-none">
     <h2 class="rightTitle">Publicaciones</h2>
   </section>
-  <section class="rightBorderCard" *ngFor="let publication of cards">
+  <section class="rightBorderCard d-block d-lg-none" *ngFor="let publication of cards">
     <h2 class="leftTitle">Titulo</h2>
     <p>{{publication}}</p>
   </section>
+
+
+  <section class=" d-none">
+      <img src="../../../assets/img/publications.png" alt="acerca de nosotros">
+    </section>
+    <section class="desTitle d-done d-lg-flex justify-content-end">
+      <h2 class="rightTitle">Publicaciones</h2>
+    </section>
+    <section class="desPubli d-lg-flex flex-column justify-content-center" *ngFor="let publication of cards">
+      <h2 class="leftTitle">Titulo</h2>
+      <p>{{publication}}</p>
+    </section>
 </div>

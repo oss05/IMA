@@ -1,11 +1,18 @@
 <div>
-  <section class="topLogo">
+  <section class="topLogo d-block d-lg-none">
     <img src="../../../assets/img/LogoMobile.png" alt="Logo IMA">
   </section>
-  <section class="titleImage">
+  <section class="desSecction d-none d-lg-block">
+      <div class="d-flex justify-content-between">
+        <img class="desLogo" src="../../../assets/img/LogoDesktop.png" alt="Logo IMA">
+        <img class="desIconFix" src="../../../assets//img/reglamentosDes.png" alt="">
+      </div>
+    </section>
+  <section class="titleImage d-flex justify-content-end d-lg-none">
     <img src="../../../assets/img/rules.png" alt="acerca de nosotros">
   </section>
-  <section class="titleCard">
+
+  <section class="titleCard d-block d-lg-none">
     <h2 class="rightTitle">Reglamentos Arbitrales</h2>
     <h2 class="miniTitle">Reglamentos de Arbitraje en español</h2>
     <h2 class="leftTitle">CAIC</h2>
@@ -15,39 +22,39 @@
       </li>
     </ul>
   </section>
-  <section class="leftBorderCard">
+  <section class="leftBorderCard d-block d-lg-none">
     <h2 class="leftTitle">CAM</h2>
-      <ul>
-        <li *ngFor="let file of CAM">
-          <a href="">{{file}}</a>
-        </li>
-      </ul>
+    <ul>
+      <li *ngFor="let file of CAM">
+        <a href="">{{file}}</a>
+      </li>
+    </ul>
   </section>
-  <section class="leftBorderCard">
+  <section class="leftBorderCard d-block d-lg-none">
     <h2 class="leftTitle">CANACO</h2>
-      <ul>
-        <li *ngFor="let file of CANACO">
-          <a href="">{{file}}</a>
-        </li>
-      </ul>
+    <ul>
+      <li *ngFor="let file of CANACO">
+        <a href="">{{file}}</a>
+      </li>
+    </ul>
   </section>
-  <section class="leftBorderCard">
+  <section class="leftBorderCard d-block d-lg-none">
     <h2 class="leftTitle">CCI</h2>
-   <ul>
-     <li *ngFor="let file of CCI">
-       <a href="">{{file}}</a>
-     </li>
-   </ul>
+    <ul>
+      <li *ngFor="let file of CCI">
+        <a href="">{{file}}</a>
+      </li>
+    </ul>
   </section>
-  <section class="leftBorderCard">
+  <section class="leftBorderCard d-block d-lg-none">
     <h2 class="leftTitle">CNUDMI</h2>
-   <ul>
-     <li *ngFor="let file of CNUDMI">
-       <a href="">{{file}}</a>
-     </li>
-   </ul>
+    <ul>
+      <li *ngFor="let file of CNUDMI">
+        <a href="">{{file}}</a>
+      </li>
+    </ul>
   </section>
-  <section class="leftBorderCard">
+  <section class="leftBorderCard d-block d-lg-none">
     <h2 class="leftTitle">ICDR</h2>
     <ul>
       <li *ngFor="let file of ICDR">
@@ -55,7 +62,7 @@
       </li>
     </ul>
   </section>
-  <section class="leftBorderCard">
+  <section class="leftBorderCard d-block d-lg-none">
     <h2 class="leftTitle">CIADI</h2>
     <ul>
       <li *ngFor="let file of CIADI">
@@ -63,7 +70,7 @@
       </li>
     </ul>
   </section>
-  <section class="leftBorderCard">
+  <section class="leftBorderCard d-block d-lg-none">
     <h2 class="leftTitle">LINEAMIENTOS</h2>
     <ul>
       <li *ngFor="let file of LINEAMIENTOS">
@@ -71,4 +78,78 @@
       </li>
     </ul>
   </section>
+
+
+<div class="desArb d-none d-lg-block">
+  <section class=" d-none d-lg-block ">
+    <div class="d-lg-flex">
+      <h2 class="rightTitle">Reglamentos Arbitrales</h2>
+    </div>
+    <div class="d-block">
+      <h2 class="miniTitle">Reglamentos de Arbitraje en español</h2>
+      <h2 class="leftTitle">CAIC</h2>
+    </div>
+    <ul>
+      <li>
+        <a href="">Reglamento de Arbitraje de CAIC</a>
+      </li>
+    </ul>
+  </section>
+  <section class=" d-none d-lg-block">
+    <h2 class="leftTitle">CAM</h2>
+    <ul>
+      <li *ngFor="let file of CAM">
+        <a href="">{{file}}</a>
+      </li>
+    </ul>
+  </section>
+  <section class=" d-none d-lg-block">
+    <h2 class="leftTitle">CANACO</h2>
+    <ul>
+      <li *ngFor="let file of CANACO">
+        <a href="">{{file}}</a>
+      </li>
+    </ul>
+  </section>
+  <section class=" d-none d-lg-block">
+    <h2 class="leftTitle">CCI</h2>
+    <ul>
+      <li *ngFor="let file of CCI">
+        <a href="">{{file}}</a>
+      </li>
+    </ul>
+  </section>
+  <section class=" d-none d-lg-block">
+    <h2 class="leftTitle">CNUDMI</h2>
+    <ul>
+      <li *ngFor="let file of CNUDMI">
+        <a href="">{{file}}</a>
+      </li>
+    </ul>
+  </section>
+  <section class=" d-none d-lg-block">
+    <h2 class="leftTitle">ICDR</h2>
+    <ul>
+      <li *ngFor="let file of ICDR">
+        <a href="">{{file}}</a>
+      </li>
+    </ul>
+  </section>
+  <section class=" d-none d-lg-block">
+    <h2 class="leftTitle">CIADI</h2>
+    <ul>
+      <li *ngFor="let file of CIADI">
+        <a href="">{{file}}</a>
+      </li>
+    </ul>
+  </section>
+  <section class=" d-none d-lg-block">
+    <h2 class="leftTitle">LINEAMIENTOS</h2>
+    <ul>
+      <li *ngFor="let file of LINEAMIENTOS">
+        <a href="">{{file}}</a>
+      </li>
+    </ul>
+  </section>
+</div>
 </div>

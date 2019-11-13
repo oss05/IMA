@@ -26,7 +26,7 @@
             </li>
           </ul>
         </div>
-        <div class="search-bar">
+        <div class="search-bar d-block d-lg-none">
           <input type="text" placeholder="Haz una busqueda..." required>
           <div class="search-icon"></div>
         </div>
@@ -60,7 +60,7 @@
                   routerLinkActive="active-icon"></i></a></li>
           </ul>
         </div>
-        <div class="socialIcons">
+        <div class="socialIcons d-block d-lg-none">
           <ul>
             <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
             <li><a href=""><i class="fab fa-linkedin"></i></a></li>
@@ -75,17 +75,51 @@
     </nav>
     <section>
       <main>
-        <div class="d-none d-lg-block">
-          <p>HOLA XD</p>
+        <div class="d-none d-lg-block ">
+          <div class="desNav">
+            <input type="text" class="form-control desSearch d-flex" placeholder="" aria-label="Username"
+              aria-describedby="addon-wrapping">
+            <div class=" d-none d-lg-block d-flex justify-content-end">
+              <a href=""><i class="fab fa-twitter-square desIcon"></i></a>
+              <a href=""><i class="fab fa-linkedin desIcon"></i></a>
+              <a class="btn btn-primary desContact " href="#" role="button">Contacto</a>
+            </div>
+          </div>
         </div>
         <router-outlet></router-outlet>
       </main>
-      <footer>
+      <footer class="d-block d-lg-none">
         <p>Todos los derechos reservados</p>
         <div>
           <a href=""><i class="fab fa-twitter-square"></i></a>
           <a href=""><i class="fab fa-linkedin"></i></a>
         </div>
+      </footer>
+
+      <footer class="d-none d-lg-block">
+        <div class="desPart d-flex justify-content-around">
+          <div class="part1">
+            <p>Inicio</p>
+            <p>Quienes Somos</p>
+            <p>Directorio</p>
+            <p>Marco Legal</p>
+          </div>
+          <div class="part2">
+            <p>Reglamentos Arbitriales</p>
+            <p>Publicaciones</p>
+            <p>Posturas</p>
+            <p>Videos</p>
+          </div>
+          <div class="desInput">
+            <p>Contacto</p>
+            <input type="text">
+          </div>
+          <div class="desIconFooter">
+            <a href=""><i class=" fab fa-twitter-square"></i></a>
+            <a href=""><i class=" fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <p>Todos los derechos reservados</p>
       </footer>
     </section>
   </mat-drawer-content>

@@ -106,3 +106,20 @@ fieldset {
 :-ms-input-placeholder {
  color:#888;
 }
+
+
+//Deskop
+.desLogo>img{
+    width: 250px;
+    margin-left: 80px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .rightTitle{
+        font-size: 25px;
+	}
+	.desForm{
+		margin-left: 350px;
+	}    
+  }
+  

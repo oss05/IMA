@@ -32,3 +32,47 @@ h2 {
 .parrafosHome>p {
   color: $primary-blue-text;
 }
+//Deskop
+.desLogo{
+
+  margin-left: 30px;
+  margin-top:0;
+}
+.desLogo>img{
+  width: 330px;
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .parrafosHome{
+    // border: solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-left: 100px;
+    
+  
+  }
+  .parrafosHome>p{
+    font-size: 16px;
+    margin-right: 100px;
+  }
+  .desArticle{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 50px;
+    
+  }
+  .desArticle>h2{
+    padding-right: 100px;
+  }
+
+  h2{
+    margin-left: 125px;
+  }
+  
+}
+
