@@ -343,7 +343,7 @@ footer>div a i {
     justify-content: center;
   }
 
-  footer>p {
+  footer> a{
     color: $secondary-gray;
     border-bottom: solid 1px $secondary-gray;
     text-align: center;
@@ -364,26 +364,29 @@ footer>div a i {
     margin-top: 0;
   }
 
-  // .desPart {
-  //   border: solid 1px gold;
+  .desPart {
+    // border: solid 1px gold;
+    height: 150px;
 
-  // }
+  }
 
-  // .part1{
-  //   border: solid 1px green;
-  // }
+  .part1{
+    // border: solid 1px green;
+    padding-top: 10px;
+  }
 
-  // .part2{
-  //   border: solid 1px red;
+  .part2{
+    // border: solid 1px red;
+    padding-top: 10px;
     
-  // }
-  .part1>p {
+  }
+  .part1>a {
     margin-top: 5px;
     color: #FFF;
     font-size: 13px;
   }
 
-  .part2>p {
+  .part2>a {
     margin-top: 5px;
     color: #FFF;
     font-size: 13px;
