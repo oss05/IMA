@@ -1,18 +1,21 @@
-<div>
-  <section class="topLogo d-block d-lg-none">
+<div style="width: 100%; height: 100vh;">
+  <section class="topLogo d-flex d-lg-none">
     <img src="../../../assets/img/LogoMobile.png" alt="Logo IMA">
   </section>
   <section class="desSecction d-none d-lg-block">
     <div class="d-flex justify-content-between">
       <img class="desLogo" src="../../../assets/img/LogoDesktop.png" alt="Logo IMA">
-      <img class="desIconFix" src="../../../assets//img/directorioDeskop.png" alt="">
+      <img class="desIconFix" src="../../../assets/img/directorioDeskop.png" alt="Directory Icon">
     </div>
   </section>
   <section class="titleImage d-flex justify-content-end d-lg-none">
-      <img src="../../../assets/img/directory.png" alt="acerca de nosotros">
-    </section>
-  <section class="titleCard d-block d-lg-none">
-    <h2 class="rightTitle">Directorio</h2>
+    <img src="../../../assets/img/directory.png" alt="acerca de nosotros">
+  </section>
+  <section class="titleCard">
+    <h2 class="rightTitle d-flex d-lg-none">Directorio</h2>
+    <div class="desTitle my-4 d-none d-lg-block">
+      <h2>Directorio</h2>
+    </div>
     <h3>Funcionarios</h3>
     <div>
       <p placement="right" [adaptivePosition]="true" [popover]="popTemplate" [outsideClick]="true">
@@ -29,87 +32,16 @@
       <app-directory-popover></app-directory-popover>
     </ng-template>
   </section>
-  <section class="rightBorderCard d-block d-lg-none">
+  <section class="rightBorderCard">
     <h2 class="leftTitle">Miembros</h2>
-    <p>La combinación de esfuerzos y conocimientos de nuestros miembros están encaminados, entre otros, a los siguientes
-      objetivos:</p>
-    <ul>
-      <li>La generación y fomento del conocimiento del derecho arbitral y de otros mecanismos alternativos de solución
-        de controversias mediante la organización de seminarios y conferencias, la preparación y publicación de estudios
-        y textos, y el intercambio de información con otras instituciones y asociaciones nacionales e internacionales,
-        entre otros.</li>
-      <li>La promoción de la utilización del arbitraje como medio alternativo de solución de controversias, buscando de
-        esa forma la armonización del derecho arbitral, reglamentos arbitrales, criterios, resoluciones y otros temas en
-        materia arbitral, sin excluir a los diferentes mecanismos alternativos de solución de controversias, así como
-        también el asesoramiento de gobiernos, institutos, organismos, la judicatura o agentes públicos, sociales o
-        privados interesados en temas relacionados con el IMA.</li>
-      <li>En general, llevar a cabo todas las actividades y acciones para impulsar el derecho arbitral y el de
-        mecanismos alternativos de solución de controversias.</li>
+    <ul *ngFor="let nombre of nombres">
+      <li>{{nombre}}</li>
     </ul>
   </section>
-  <section class="rightBorderCard d-block d-lg-none">
-    <h2 class="leftTitle">Filosofía</h2>
-    <p>La combinación de esfuerzos y conocimientos de nuestros miembros están encaminados, entre otros, a los siguientes
-      objetivos:</p>
-    <ul>
-      <li>La generación y fomento del conocimiento del derecho arbitral y de otros mecanismos alternativos de solución
-        de controversias mediante la organización de seminarios y conferencias, la preparación y publicación de estudios
-        y textos, y el intercambio de información con otras instituciones y asociaciones nacionales e internacionales,
-        entre otros.</li>
-      <li>La promoción de la utilización del arbitraje como medio alternativo de solución de controversias, buscando de
-        esa forma la armonización del derecho arbitral, reglamentos arbitrales, criterios, resoluciones y otros temas en
-        materia arbitral, sin excluir a los diferentes mecanismos alternativos de solución de controversias, así como
-        también el asesoramiento de gobiernos, institutos, organismos, la judicatura o agentes públicos, sociales o
-        privados interesados en temas relacionados con el IMA.</li>
-      <li>En general, llevar a cabo todas las actividades y acciones para impulsar el derecho arbitral y el de
-        mecanismos alternativos de solución de controversias.</li>
+  <section class="rightBorderCard">
+    <h2 class="leftTitle">Expresidentes</h2>
+    <ul *ngFor="let nombre of nombres">
+      <li>{{nombre}}</li>
     </ul>
   </section>
-  <div class="desInfo d-flex">
-    <section class="desMiem d-none d-lg-flex flex-column ">
-      <h2 class="leftTitle">Miembros</h2>
-      <p>La combinación de esfuerzos y conocimientos de nuestros miembros están encaminados, entre otros, a los
-        siguientes
-        objetivos:</p>
-      <ul>
-        <li>La generación y fomento del conocimiento del derecho arbitral y de otros mecanismos alternativos de solución
-          de controversias mediante la organización de seminarios y conferencias, la preparación y publicación de
-          estudios
-          y textos, y el intercambio de información con otras instituciones y asociaciones nacionales e internacionales,
-          entre otros.</li>
-        <li>La promoción de la utilización del arbitraje como medio alternativo de solución de controversias, buscando
-          de
-          esa forma la armonización del derecho arbitral, reglamentos arbitrales, criterios, resoluciones y otros temas
-          en
-          materia arbitral, sin excluir a los diferentes mecanismos alternativos de solución de controversias, así como
-          también el asesoramiento de gobiernos, institutos, organismos, la judicatura o agentes públicos, sociales o
-          privados interesados en temas relacionados con el IMA.</li>
-        <li>En general, llevar a cabo todas las actividades y acciones para impulsar el derecho arbitral y el de
-          mecanismos alternativos de solución de controversias.</li>
-      </ul>
-    </section>
-    <div class="blanco d-none d-lg-flex"></div>
-    <section class="desFilo d-none d-lg-flex flex-column ">
-      <h2 class="leftTitle">Filosofía</h2>
-      <p>La combinación de esfuerzos y conocimientos de nuestros miembros están encaminados, entre otros, a los
-        siguientes
-        objetivos:</p>
-      <ul>
-        <li>La generación y fomento del conocimiento del derecho arbitral y de otros mecanismos alternativos de solución
-          de controversias mediante la organización de seminarios y conferencias, la preparación y publicación de
-          estudios
-          y textos, y el intercambio de información con otras instituciones y asociaciones nacionales e internacionales,
-          entre otros.</li>
-        <li>La promoción de la utilización del arbitraje como medio alternativo de solución de controversias, buscando
-          de
-          esa forma la armonización del derecho arbitral, reglamentos arbitrales, criterios, resoluciones y otros temas
-          en
-          materia arbitral, sin excluir a los diferentes mecanismos alternativos de solución de controversias, así como
-          también el asesoramiento de gobiernos, institutos, organismos, la judicatura o agentes públicos, sociales o
-          privados interesados en temas relacionados con el IMA.</li>
-        <li>En general, llevar a cabo todas las actividades y acciones para impulsar el derecho arbitral y el de
-          mecanismos alternativos de solución de controversias.</li>
-      </ul>
-    </section>
-  </div>
 </div>

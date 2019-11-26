@@ -3,11 +3,11 @@
     <img src="../../../assets/img/LogoMobile.png" alt="Logo IMA">
   </section>
   <section class="desSecction d-none d-lg-block">
-      <div class="d-flex justify-content-between">
-        <img class="desLogo" src="../../../assets/img/LogoDesktop.png" alt="Logo IMA">
-        <img class="desIconFix" src="../../../assets//img/reglamentosDes.png" alt="">
-      </div>
-    </section>
+    <div class="d-flex justify-content-between">
+      <img class="desLogo" src="../../../assets/img/LogoDesktop.png" alt="Logo IMA">
+      <img class="desIconFix" src="../../../assets//img/reglamentosDes.png" alt="">
+    </div>
+  </section>
   <section class="titleImage d-flex justify-content-end d-lg-none">
     <img src="../../../assets/img/rules.png" alt="acerca de nosotros">
   </section>
@@ -16,140 +16,140 @@
     <h2 class="rightTitle">Reglamentos Arbitrales</h2>
     <h2 class="miniTitle">Reglamentos de Arbitraje en español</h2>
     <h2 class="leftTitle">CAIC</h2>
-    <ul>
-      <li>
-        <a href="">Reglamento de Arbitraje de CAIC</a>
+    <ul *ngFor="let archive of archives">
+      <li *ngIf="archive.section === 'CAIC' ">
+        <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
       </li>
     </ul>
   </section>
   <section class="leftBorderCard d-block d-lg-none">
     <h2 class="leftTitle">CAM</h2>
-    <ul>
-      <li *ngFor="let file of CAM">
-        <a href="">{{file}}</a>
+    <ul *ngFor="let archive of archives">
+      <li *ngIf="archive.section === 'CAM' ">
+        <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
       </li>
     </ul>
   </section>
   <section class="leftBorderCard d-block d-lg-none">
     <h2 class="leftTitle">CANACO</h2>
-    <ul>
-      <li *ngFor="let file of CANACO">
-        <a href="">{{file}}</a>
+    <ul *ngFor="let archive of archives">
+      <li *ngIf="archive.section === 'CANACO' ">
+        <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
       </li>
     </ul>
   </section>
   <section class="leftBorderCard d-block d-lg-none">
     <h2 class="leftTitle">CCI</h2>
-    <ul>
-      <li *ngFor="let file of CCI">
-        <a href="">{{file}}</a>
+    <ul *ngFor="let archive of archives">
+      <li *ngIf="archive.section === 'CCI' ">
+        <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
       </li>
     </ul>
   </section>
   <section class="leftBorderCard d-block d-lg-none">
     <h2 class="leftTitle">CNUDMI</h2>
-    <ul>
-      <li *ngFor="let file of CNUDMI">
-        <a href="">{{file}}</a>
+    <ul *ngFor="let archive of archives">
+      <li *ngIf="archive.section === 'CNUDMI' ">
+        <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
       </li>
     </ul>
   </section>
   <section class="leftBorderCard d-block d-lg-none">
     <h2 class="leftTitle">ICDR</h2>
-    <ul>
-      <li *ngFor="let file of ICDR">
-        <a href="">{{file}}</a>
+    <ul *ngFor="let archive of archives">
+      <li *ngIf="archive.section === 'ICDR' ">
+        <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
       </li>
     </ul>
   </section>
   <section class="leftBorderCard d-block d-lg-none">
     <h2 class="leftTitle">CIADI</h2>
-    <ul>
-      <li *ngFor="let file of CIADI">
-        <a href="">{{file}}</a>
+    <ul *ngFor="let archive of archives">
+      <li *ngIf="archive.section === 'CIADI' ">
+        <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
       </li>
     </ul>
   </section>
   <section class="leftBorderCard d-block d-lg-none">
     <h2 class="leftTitle">LINEAMIENTOS</h2>
-    <ul>
-      <li *ngFor="let file of LINEAMIENTOS">
-        <a href="">{{file}}</a>
+    <ul *ngFor="let archive of archives">
+      <li *ngIf="archive.section === 'LINEAMIENTOS' ">
+        <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
       </li>
     </ul>
   </section>
 
 
-<div class="desArb d-none d-lg-block">
-  <section class=" d-none d-lg-block ">
-    <div class="d-lg-flex">
-      <h2 class="rightTitle">Reglamentos Arbitrales</h2>
-    </div>
-    <div class="d-block">
-      <h2 class="miniTitle">Reglamentos de Arbitraje en español</h2>
-      <h2 class="leftTitle">CAIC</h2>
-    </div>
-    <ul>
-      <li>
-        <a href="">Reglamento de Arbitraje de CAIC</a>
-      </li>
-    </ul>
-  </section>
-  <section class=" d-none d-lg-block">
-    <h2 class="leftTitle">CAM</h2>
-    <ul>
-      <li *ngFor="let file of CAM">
-        <a href="">{{file}}</a>
-      </li>
-    </ul>
-  </section>
-  <section class=" d-none d-lg-block">
-    <h2 class="leftTitle">CANACO</h2>
-    <ul>
-      <li *ngFor="let file of CANACO">
-        <a href="">{{file}}</a>
-      </li>
-    </ul>
-  </section>
-  <section class=" d-none d-lg-block">
-    <h2 class="leftTitle">CCI</h2>
-    <ul>
-      <li *ngFor="let file of CCI">
-        <a href="">{{file}}</a>
-      </li>
-    </ul>
-  </section>
-  <section class=" d-none d-lg-block">
-    <h2 class="leftTitle">CNUDMI</h2>
-    <ul>
-      <li *ngFor="let file of CNUDMI">
-        <a href="">{{file}}</a>
-      </li>
-    </ul>
-  </section>
-  <section class=" d-none d-lg-block">
-    <h2 class="leftTitle">ICDR</h2>
-    <ul>
-      <li *ngFor="let file of ICDR">
-        <a href="">{{file}}</a>
-      </li>
-    </ul>
-  </section>
-  <section class=" d-none d-lg-block">
-    <h2 class="leftTitle">CIADI</h2>
-    <ul>
-      <li *ngFor="let file of CIADI">
-        <a href="">{{file}}</a>
-      </li>
-    </ul>
-  </section>
-  <section class=" d-none d-lg-block">
-    <h2 class="leftTitle">LINEAMIENTOS</h2>
-    <ul>
-      <li *ngFor="let file of LINEAMIENTOS">
-        <a href="">{{file}}</a>
-      </li>
-    </ul>
-  </section>
-</div>
+  <div class="desArb d-none d-lg-block">
+    <section class=" d-none d-lg-block ">
+      <div class="d-lg-flex my-4">
+        <h2 class="rightTitle">Reglamentos Arbitrales</h2>
+      </div>
+      <div class="d-block">
+        <h2 class="miniTitle">Reglamentos de Arbitraje en español</h2>
+        <h2 class="leftTitle">CAIC</h2>
+      </div>
+      <ul *ngFor="let archive of archives">
+        <li *ngIf="archive.section === 'CAIC' ">
+          <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
+        </li>
+      </ul>
+    </section>
+    <section class=" d-none d-lg-block">
+      <h2 class="leftTitle">CAM</h2>
+      <ul *ngFor="let archive of archives">
+        <li *ngIf="archive.section === 'CAM' ">
+          <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
+        </li>
+      </ul>
+    </section>
+    <section class=" d-none d-lg-block">
+      <h2 class="leftTitle">CANACO</h2>
+      <ul *ngFor="let archive of archives">
+        <li *ngIf="archive.section === 'CANACO' ">
+          <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
+        </li>
+      </ul>
+    </section>
+    <section class=" d-none d-lg-block">
+      <h2 class="leftTitle">CCI</h2>
+      <ul *ngFor="let archive of archives">
+        <li *ngIf="archive.section === 'CCI' ">
+          <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
+        </li>
+      </ul>
+    </section>
+    <section class=" d-none d-lg-block">
+      <h2 class="leftTitle">CNUDMI</h2>
+      <ul *ngFor="let archive of archives">
+        <li *ngIf="archive.section === 'CNUDMI' ">
+          <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
+        </li>
+      </ul>
+    </section>
+    <section class=" d-none d-lg-block">
+      <h2 class="leftTitle">ICDR</h2>
+      <ul *ngFor="let archive of archives">
+        <li *ngIf="archive.section === 'ICDR' ">
+          <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
+        </li>
+      </ul>
+    </section>
+    <section class=" d-none d-lg-block">
+      <h2 class="leftTitle">CIADI</h2>
+      <ul *ngFor="let archive of archives">
+        <li *ngIf="archive.section === 'CIADI' ">
+          <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
+        </li>
+      </ul>
+    </section>
+    <section class=" d-none d-lg-block">
+      <h2 class="leftTitle">LINEAMIENTOS</h2>
+      <ul *ngFor="let archive of archives">
+        <li *ngIf="archive.section === 'LINEAMIENTOS' ">
+          <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
+        </li>
+      </ul>
+    </section>
+  </div>
 </div>

@@ -12,7 +12,7 @@ $primary-blue-text: #065674;
 }
  
 .parrafosHome {
-    padding: 0 2em;
+    padding: 1em 2em 0 4em;
     text-align: justify;
     margin-bottom: 1em;
 }
@@ -21,17 +21,7 @@ $primary-blue-text: #065674;
     color: $primary-blue-text;
 }
 
-//Deskop
-
-// .desSecction{
-// //   border: solid 1px;
-// }
-
-.desLogo{
-    width: 250px;
-    height: 107.34px;
-    margin-left: 80px;  
-}
+//Desktop
 .desIcon{
     width: 100px;
     position:fixed;
@@ -39,8 +29,6 @@ $primary-blue-text: #065674;
     
 }
 .desInfo{
-    // border:springgreen 1px solid ;
-    width: 93vw;
     height: 80vh;
     padding-left: 70px;
     padding-top: 50px;
@@ -76,16 +64,3 @@ $primary-blue-text: #065674;
 .desFilo>p{
     font-size: 15px;
 }
-
-@media only screen and (min-width: 1000px) {
-    
-.desInfo{
-    // border:springgreen 1px solid ;
-    width: 93vw;
-    height: auto;
-    padding-left: 70px;
-    padding-top: 50px;
-
-}
-  }
-  

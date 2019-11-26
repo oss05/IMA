@@ -224,13 +224,15 @@ li {
 // Collapsed Navbar
 
 nav {
-  width: 13em;
+  width: 26px;
+  height: 100vh;
+  position: fixed;
   background-color: $primary-blue;
   z-index: 9;
 }
 
 .open {
-  padding-top: 50px;
+  padding-top: 55px;
   margin-left: -1px;
   position: fixed;
 }
@@ -238,13 +240,13 @@ nav {
 // Main Content
 
 .mainContentContainer {
-  display: flex;
+  // display: flex;
 }
 
 // Footer 
 
 footer {
-  height: 150px;
+  height: 110px;
   background-color: $footer-color;
   display: flex;
   flex-direction: column;

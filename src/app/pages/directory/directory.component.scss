@@ -55,14 +55,21 @@ p {
   font-size: 15px;
 }
 @media only screen and (min-width: 1000px) {
-    
-  .desInfo{
-      // border:springgreen 1px solid ;
-      width: 93vw;
-      height: auto;
-      padding-left: 70px;
-      padding-top: 50px;
-  
-  }
+    .titleCard {
+      background-color: transparent;
+      box-shadow: none;
+      margin-left: 10em;
     }
+
+    .rightBorderCard {
+      background-color: transparent;
+      box-shadow: none;
+      margin-left: 10em;
+    }
+
+    .desTitle>h2{
+      font-size: 30px;
+      padding-right: 300px;
+  }
+}
     

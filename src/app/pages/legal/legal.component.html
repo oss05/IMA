@@ -3,65 +3,61 @@
     <img src="../../../assets/img/LogoMobile.png" alt="Logo IMA">
   </section>
   <section class="desSecction d-none d-lg-block">
-      <div class="d-flex justify-content-between">
-        <img class="desLogo" src="../../../assets/img/LogoDesktop.png" alt="Logo IMA">
-        <img class="desIconFix" src="../../../assets//img/marcoDes.png" alt="">
-      </div>
-    </section>
+    <div class="d-flex justify-content-between">
+      <img class="desLogo" src="../../../assets/img/LogoDesktop.png" alt="Logo IMA">
+      <img class="desIconFix" src="../../../assets//img/marcoDes.png" alt="Marco legal icon">
+    </div>
+  </section>
   <section class="titleImage d-flex justify-content-end d-lg-none">
     <img src="../../../assets/img/legal.png" alt="acerca de nosotros">
   </section>
   <section class="titleCard d-block d-lg-none">
     <h2 class="rightTitle">Marco Legal</h2>
     <h2 class="leftTitle">Legislación Mexicana</h2>
-    <ul>
-      <li *ngFor="let file of legislacion">
-        <a href="">{{file}}</a>
+    <ul *ngFor="let archive of archives">
+      <li *ngIf="archive.section === 'LEGISLACIÓN MEXICANA'">
+        <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
       </li>
     </ul>
   </section>
-  <section class="leftBorderCar d-block d-lg-none">
+  <section class="leftBorderCard d-block d-lg-none">
     <h2 class="leftTitle">Convenios Internacionales</h2>
-    <ul>
-      <li *ngFor="let file of convenios">
-        <a href="">{{file}}</a>
+    <ul *ngFor="let archive of archives">
+      <li *ngIf="archive.section === 'CONVENCIONES INTERNACIONALES'">
+        <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
       </li>
     </ul>
   </section>
   <section class="leftBorderCard d-block d-lg-none">
     <h2 class="leftTitle">Jurisprudencia</h2>
-    <ul>
-      <li *ngFor="let file of jurisprudencia">
-        <a href="">{{file}}</a>
+    <ul *ngFor="let archive of archives">
+      <li *ngIf="archive.section === 'JURISPRUDENCIA'">
+        <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
       </li>
     </ul>
   </section>
 
-  <div class="desLegal">
-    <section class="d-none d-lg-block">
-      <div class="desTitle d-flex justify-content-end">
+  <div class="desLegal d-none d-lg-block">
+    <section style="margin-left: 10em;">
+      <div class="desTitle my-4">
         <h2>Marco Legal</h2>
       </div>
       <h2 class="desLeftTitle leftTitle">Legislación Mexicana</h2>
-      <ul>
-        <li class="listPdf" *ngFor="let file of legislacion">
-          <img class="logoPdf" src="../../../assets/img/pdf.png" alt="pdf"> <a href="">{{file}}</a>
+      <ul class="mb-5" *ngFor="let archive of archives">
+        <li class="listPdf" *ngIf="archive.section === 'LEGISLACIÓN MEXICANA'">
+          <img class="logoPdf" src="../../../assets/img/pdf.png" alt="pdf"> <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
         </li>
       </ul>
-    </section>
-    <section class="d-none d-lg-block">
       <h2 class="desLeftTitl leftTitle">Convenios Internacionales</h2>
-      <ul>
-        <li class="listPdf" *ngFor="let file of convenios">
-          <img class="logoPdf" src="../../../assets/img/pdf.png" alt="pdf"> <a href="">{{file}}</a>
+      <ul class="mb-5" *ngFor="let archive of archives">
+        <li class="listPdf" *ngIf="archive.section === 'CONVENCIONES INTERNACIONALES'">
+          <img class="logoPdf" src="../../../assets/img/pdf.png" alt="pdf"> <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
         </li>
       </ul>
-    </section>
-    <section class="d-none d-lg-block">
       <h2 class=" desLeftTitl leftTitle">Jurisprudencia</h2>
-      <ul>
-        <li class="listPdf" *ngFor="let file of jurisprudencia">
-          <img class="logoPdf" src="../../../assets/img/pdf.png" alt="pdf"><a href="">{{file}}</a>
+      <ul class="mb-5" *ngFor="let archive of archives">
+        <li class="listPdf" *ngIf="archive.section === 'JURISPRUDENCIA'">
+          <img class="logoPdf" src="../../../assets/img/pdf.png" alt="pdf"><a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
         </li>
       </ul>
     </section>

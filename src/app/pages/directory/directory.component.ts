@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DirectoryComponent implements OnInit {
 
   nombres = [
-    'primer marrana', 'segunda marrana', 'tercera marrana'
+    'primer nombre', 'segundo nombre', 'tercer nombre', 'cuarto nombre', 'quinto nombre'
   ];
 
   constructor() { }
