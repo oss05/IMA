@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-directory-popover',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectoryPopoverComponent implements OnInit {
 
+  @Input('selected') selected: any;
+
   constructor() { }
 
   ngOnInit() {
+    console.log(this.selected);
   }
 
 }

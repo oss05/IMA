@@ -5,6 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { FormsModule } from '@angular/forms';
+
+
+// components
 import { HomeComponent } from './pages/home/home.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { DirectoryComponent } from './pages/directory/directory.component';
@@ -27,6 +31,10 @@ import { AboutUsModule } from './pages/about-us/about-us.module';
 import { HomeModule } from './pages/home/home.module';
 import { PopoverModule } from 'ngx-bootstrap/popover';
 import { PopoverModuleModule } from './pages/popover-module/popover-module.module';
+import { SearchComponent } from './components/search/search.component';
+
+// pipes
+import { FragmentPipe } from './pipes/fragment-text.pipe';
 
 @NgModule({
   declarations: [
@@ -41,9 +49,11 @@ import { PopoverModuleModule } from './pages/popover-module/popover-module.modul
     VideosComponent,
     PodcastComponent,
     ContactUsComponent,
+    SearchComponent,
+    FragmentPipe
   ],
   imports: [
-    BrowserModule,
+  BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
@@ -58,7 +68,8 @@ import { PopoverModuleModule } from './pages/popover-module/popover-module.modul
     AboutUsModule,
     HomeModule,
     PopoverModule.forRoot(),
-    PopoverModuleModule
+    PopoverModuleModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

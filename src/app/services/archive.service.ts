@@ -37,4 +37,8 @@ export class ArchiveService {
   getPositions() {
     return this.http.get<any>(this.url + 'archives/positions').pipe();
   }
+
+  searchPosts(search: string) {
+    return this.http.get<any>(this.url + 'archives/search/' + search, httpOptions).pipe();
+  }
 }

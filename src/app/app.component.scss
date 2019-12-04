@@ -132,93 +132,38 @@ li {
   margin: 1px;
 }
 
-.search-bar {
-  height: auto;
-  width: auto;
-  position: absolute;
-  display: inline-block;
-  top: 68%;
-  left: 15%;
-  transform: translate(-10%, -50%);
-  box-sizing: border-box;
-
-  input {
-    height: 22px;
-    width: 22px;
-    padding: 5px 10px;
-    box-sizing: border-box;
-    font-size: 9px;
-    border: $size/10 solid transparent;
-    border-radius: 44px;
-    cursor: pointer;
-    background-color: transparent;
-    transition: all 0.5s ease-out;
-
-    color: transparent;
-
-    &::placeholder {
-      color: transparent;
-    }
-
-    &:invalid {
-      box-shadow: none;
-    }
-
-    &:hover {
-      border: $size/10 solid #FFF;
-      box-shadow: 0 0 $size/10 $size/10 #EEE;
-    }
-
-    &:focus,
-    &:valid {
-      width: 200px;
-      border: $size/10 solid #267491;
-      outline: none;
-      cursor: auto;
-      background-color: #FFF;
-      color: #000;
-
-      &::placeholder {
-        color: #999;
-      }
-
-      +.search-icon {
-        z-index: 0;
-        border-color: #267491;
-        right: 20px;
-
-        &:after {
-          background-color: #267491;
-        }
-      }
-    }
-  }
+//search
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
 }
 
+.searchTerm {
+  width: 100%;
+  border: 3px solid $primary-blue;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  color: #9DBFAF;
+}
 
+.searchTerm:focus {
+  color: $primary-blue;
+}
 
-.search-icon {
-  display: inline-block;
-  height: $size;
-  width: $size;
-  border-radius: 50%;
-  border: $size/10 solid #267491;
-  position: absolute;
-  right: 12px;
-  top: 8px;
-  z-index: -1;
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: $size/2 + $size/4*1.414 + $size/10;
-    left: $size/2 + $size/4*1.414;
-    transform: rotate(45deg);
-    height: $size/10;
-    width: $size/2;
-    background-color: #267491;
-    border-radius: 10px;
-  }
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid $primary-blue;
+  background: $primary-blue;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 // Collapsed Navbar
@@ -278,28 +223,29 @@ footer>div a i {
 .desNav {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   margin-top: 20px;
   // border: solid 1px;
   height: 25px;
+  margin-right: 250px;
+  height: 5em;
 }
 
 .desIcon {
-  font-size: 25px;
-  margin: 10px;
+  font-size: 36px;
+  margin: 0 10px;
   color: #1c6660;
   margin-top: 0;
 }
 
 .desContact {
-
   background-color: #304e59;
-  margin-right: 180px;
-  margin-bottom: 10px;
-  height: 25px;
+  height: 36px;
   font-size: 15px;
   padding: 0;
   width: 100px;
   border-radius: 20px;
+  color: #fff;
 }
 
 .desSearch {
@@ -309,26 +255,28 @@ footer>div a i {
   border-radius: 20px;
 }
 
-.desInput{
+.desInput {
   height: 30px;
   margin-top: 50px;
 }
-.desInput>p{
+
+.desInput>p {
   color: white;
   margin: 0;
 }
-.desInput>input{
+
+.desInput>input {
   margin: 0;
 }
 
-.desIconFooter{
+.desIconFooter {
   margin-top: 50px;
 }
 
 
 @media only screen and (min-width: 1000px) {
   .navbarContainer {
-    width: 300px;
+    width: 350px;
   }
 
   .mainContainer {
@@ -345,7 +293,7 @@ footer>div a i {
     justify-content: center;
   }
 
-  footer> a{
+  footer>a {
     color: $secondary-gray;
     border-bottom: solid 1px $secondary-gray;
     text-align: center;
@@ -372,16 +320,17 @@ footer>div a i {
 
   }
 
-  .part1{
+  .part1 {
     // border: solid 1px green;
     padding-top: 10px;
   }
 
-  .part2{
+  .part2 {
     // border: solid 1px red;
     padding-top: 10px;
-    
+
   }
+
   .part1>a {
     margin-top: 5px;
     color: #FFF;

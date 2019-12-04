@@ -13,6 +13,7 @@ import { PosturesComponent } from './pages/postures/postures.component';
 import { VideosComponent } from './pages/videos/videos.component';
 import { PodcastComponent } from './pages/podcast/podcast.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { SearchComponent } from './components/search/search.component';
 
 // resolves
 import { PositionsAllResolve } from './resolves/all-positions.resolve';
@@ -32,11 +33,12 @@ const routes: Routes = [
   { path: 'videos', component: VideosComponent },
   { path: 'podcast', component: PodcastComponent },
   { path: 'contacto', component: ContactUsComponent },
+  { path: 'search/:search', component: SearchComponent },
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' }),
+  RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' }),
     HttpClientModule],
   exports: [RouterModule],
   providers: [PositionsAllResolve, RegulationsAllResolve, LegalAllResolve]

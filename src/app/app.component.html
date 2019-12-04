@@ -26,10 +26,18 @@
             </li>
           </ul>
         </div>
-        <!-- <div class="search-bar d-block d-lg-none">
-          <input type="text" placeholder="Haz una busqueda..." required>
-          <div class="search-icon"></div>
-        </div> -->
+        <form (ngSubmit)="onSubmit()" #searchForm="ngForm" class="d-flex d-lg-none justify-content-center">
+          <div>
+            <div class="search">
+              <input type="search" class="searchTerm" placeholder="Haz una busqueda" name="searchNote"
+                #searchNote="ngModel" [(ngModel)]="search" (search)="onSearch($event)">
+              <button type="submit" (click)="onSubmit()" class="searchButton">
+                <i class="fa fa-search"></i>
+              </button>
+              <button type="submit" hidden></button>
+            </div>
+          </div>
+        </form>
       </article>
       <article class="iconSection">
         <div class="closeNavbar">
@@ -77,12 +85,22 @@
       <main>
         <div class="d-none d-lg-block ">
           <div class="desNav">
-            <input type="text" class="form-control desSearch d-flex" placeholder="" aria-label="Username"
-              aria-describedby="addon-wrapping">
-            <div class=" d-none d-lg-block d-flex justify-content-end">
+            <form (ngSubmit)="onSubmit()" #searchForm="ngForm">
+              <div>
+                <div class="search">
+                  <input type="search" class="searchTerm" placeholder="Haz una busqueda" name="searchNote"
+                    #searchNote="ngModel" [(ngModel)]="search" (search)="onSearch($event)">
+                  <button type="submit" (click)="onSubmit()" class="searchButton">
+                    <i class="fa fa-search"></i>
+                  </button>
+                  <button type="submit" hidden></button>
+                </div>
+              </div>
+            </form>
+            <div class="d-none d-lg-flex align-items-center">
               <a href=""><i class="fab fa-twitter-square desIcon"></i></a>
               <a href=""><i class="fab fa-linkedin desIcon"></i></a>
-              <a class="btn btn-primary desContact " href="#" role="button">Contacto</a>
+              <button class="desContact " href="#" role="button">Contacto</button>
             </div>
           </div>
         </div>

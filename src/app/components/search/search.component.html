@@ -1,0 +1,44 @@
+<div style="width: 100%; height: 100vh;">
+  <section class="topLogo d-block d-lg-none">
+    <img src="../../../assets/img/LogoMobile.png" alt="Logo IMA">
+  </section>
+  <section class="desSecction d-none d-lg-block">
+    <div class="d-flex justify-content-between">
+      <img class="desLogo" src="../../../assets/img/LogoDesktop.png" alt="Logo IMA">
+      <img class="desIconFix" src="../../../assets//img/marcoDes.png" alt="Marco legal icon">
+    </div>
+  </section>
+  <section class="titleImage d-flex justify-content-end d-lg-none">
+    <img src="../../../assets/img/legal.png" alt="acerca de nosotros">
+  </section>
+  <section class="titleCard">
+    <h2 class="rightTitle d-flex d-lg-none">Busqueda</h2>
+    <div class="resultadosSearch" *ngIf=archives.length>
+      <p>{{archives.length}} archivo{{archives.length != 1 ? 's' : ''}} contienen la palabra: "{{search}}"</p>
+    </div>
+    <div class="resultadosSearch" *ngIf=!archives.length>
+      <p>No se encontraron resultados que coincidan con: "{{search}}"</p>
+    </div>
+  </section>
+  <section class="leftBorderCard">
+    <h2 class="leftTitle">Resultados:</h2>
+    <div>
+      <div>
+        <ul *ngFor="let archive of archives ; let i = index">
+          <li *ngIf="i <= limit" class="listaResultados">
+            <span class="numeroIzq">{{i+1 + '. '}}</span>
+            <a [href]="url + 'file/' + archive.path" target="_blank">{{archive.name}}</a>
+            <div>
+              <a [href]="url + 'file/' + archive.path" target="_blank">{{ archive.content | fragment:[250] }}</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <button (click)="limit = limit + 10" *ngIf="limit < archives.length - 1">
+          Carga más archivos...
+        </button>
+      </div>
+    </div>
+  </section>
+</div>

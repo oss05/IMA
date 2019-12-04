@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { GLOBAL } from '../../../global';
 
 //  modelos
 import { Archive } from '../../models/archive';
-import { GLOBAL } from '../../../global';
 
 @Component({
   selector: 'app-postures',
@@ -24,7 +24,6 @@ export class PosturesComponent implements OnInit {
   }
 
   ngOnInit() {
-
     console.log(this.archives);
   }
 

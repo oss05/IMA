@@ -23,8 +23,6 @@ export class RulesComponent implements OnInit {
   }
 
   ngOnInit() {
-
-    console.log(this.archives)
   }
 
 }
